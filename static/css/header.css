@@ -1,0 +1,200 @@
+*{
+    top: 0;
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+#home{
+    top: 0;
+    width: 100%;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(169,168,179,1) 0%, rgba(231,231,237,1) 30%, rgba(246,250,251,1) 80%);    z-index: -1;
+    opacity: .7;
+}
+
+
+
+/* styling for the navigation bar */
+.login-logo{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.login-logo img{
+    height: 47px;
+    filter: invert(1);
+}
+#navbar{
+    position: sticky;
+    display: flex;
+    /* justify-content: center; */
+    width: 100%;
+    height: 50px;
+    /* background: linear-gradient(to left ,rgb(67, 134, 50) ,rgb(149, 218, 71));     */
+    background: black;
+    box-shadow: 5px 3px 5px  rgb(129, 127, 127);
+}
+
+
+/* styling for the login menu */
+#loginmenu{
+    height: 100%;
+    width: 12%;
+    position: relative;
+    margin-left: 0;
+    right: 0;
+    float: left;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+#logindrop{
+    align-self:center;
+}
+#loginmenu a{
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+    font-weight: 800;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+.menu-logo{
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+.menu-logo a{
+    margin-top: 4px;
+}
+.menu-logo img{
+    margin-top: 3px;
+    height: 40px;
+    filter: invert(1);
+}
+#logindropdown{
+    position: relative;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    padding: 0%;
+    margin-top: 0;
+    list-style: none;
+}
+#logindropdown li {
+    z-index: 1;
+    padding: 6px;
+    width: 100%;
+    height: 100%;
+    background: rgb(8, 8, 8);
+}
+#logindropdown li a{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+background: rgb(7, 7, 7);
+}
+#loginmenu:hover{
+background: white;
+/* transition: background .5s; */
+border: 1px solid rgb(255, 255, 255);
+border-bottom: 2px solid white;
+}
+#loginmenu:hover .login-logo img{
+    filter: invert(-1);
+}
+#loginmenu:hover #logindrop{
+    color: black;
+}
+
+#loginmenu:hover #logindropdown{
+    
+    display: block;
+    background: linear-gradient(to right  ,rgb(67, 134, 50) ,rgb(149, 218, 71));  
+}
+
+
+/* styling for the dropdown menu */
+#menubutton {
+    height: 100%;
+    width: 12%;
+    position: absolute;
+    right: 0;
+    float: right;
+    text-align: center;
+    background: rgb(0, 0, 0);
+}
+#menubutton a{
+    cursor:pointer;
+    font-weight: 800;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+}
+#dropdown{
+    position: relative;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    margin-top: 0%;
+    list-style: none;
+}
+#dropdown li {
+    z-index: 1;
+    padding: 6px;
+    width: 100%;
+    height: 100%;
+    background: rgb(8, 8, 8);
+}
+#dropdown li a{
+    width: 100%;
+    height: 100%;
+background: rgb(7, 7, 7);
+}
+#menubutton:hover{
+background: white;
+/* transition: background .5s; */
+border: 1px solid rgb(255, 255, 255);
+border-bottom: 2px solid white;
+}
+#menubutton:hover #menudrop{
+    color: black;
+}
+
+#menubutton:hover #dropdown{
+    
+    display: block;
+    background: linear-gradient(to right  ,rgb(67, 134, 50) ,rgb(149, 218, 71));  
+}
+
+/* styling for  the main logo */
+#mainlogo{
+    margin: 0 auto;
+    align-items: center;
+       height: 110%;
+       width: 10%;
+}
+#logo1{
+    height: 100%;
+    width: 100%;
+}
+.htext{
+    font-family:serif;
+}
+
+
+
+

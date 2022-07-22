@@ -1,0 +1,111 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Booking
+  link(rel='stylesheet' href='css/style.css')
+  // Font
+  link(href='https://fonts.googleapis.com/css?family=Raleway:400,600,700,900' rel='stylesheet')
+  link(rel='stylesheet' href='./static/css/navbar.css')
+style.
+  body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1px;
+  }
+  .heading-green{
+      color:rgb(223, 22, 79);
+      margin-left:20%;
+      font-size:2.5rem;
+      font-weight:1000;
+  }
+  .container-form {
+  height: 90vh;
+  width: 70%;
+  padding: 20px 0;
+  margin: 0 auto;
+  color: #000;
+  }
+  form {
+  display: grid;
+  height:80vh;
+  grid-row-gap: 10px;
+  }
+  form p {
+  font-weight: 600;
+  }
+  .form-field {
+  display: flex;
+  justify-content: space-between;
+  }
+  input,
+  select {
+  padding: 5px 8px;
+  }
+  .btn {
+  background-color: rgb(223, 22, 79);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  box-shadow: 7px 10px 12px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all .3s;
+  }
+  .form-field input {
+  width: 30%;
+  border-radius: 10px;
+  padding-left: 20px;
+  }
+  .btn:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+  -moz-transform: scale(1.03);
+  -ms-transform: scale(1.03);
+  -o-transform: scale(1.03);
+  box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
+  }
+  #selection{
+  width: 20%;
+  border-radius: 10px;
+  border: 1.5px solid black;
+  }
+  
+#navbar.nav
+  ul.nav.navbar-nav.navbar-right
+    li
+      a.menu(href='/') Home
+.container-form
+  form(action='/booking' method="POST")
+    h2.heading.heading-green Place Your Booking
+    .form-field
+      p Your Name
+      input(type='text' name="name" placeholder='Your Name')
+    .form-field
+      p Student Id
+      input(type='text' name="Sid" placeholder='Student id')
+    .form-field
+      p Your email
+      input(type='email' name="email" placeholder='Your email')
+    .form-field
+      p Date
+      input(type='date' name="date")
+    .form-field
+      p Course
+      input(type='text'  placeholder='Btech' name='course')
+    .form-field
+      p plans
+      select#selection(name="plans")
+        option(value='Lunch + Dinner') Lunch + Dinner 
+        option(value='Breakfast + dinner') Breakfast + dinner 
+        option(value='Breakfast + lunch + Dinner') Breakfast + lunch + Dinner
+         
+    .form-field
+      p password
+      input(type='password' placeholder='password' name='password' )
+    button.btn Sign up

@@ -1,0 +1,132 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title homepage
+  link(rel='stylesheet' href='./static/css/navbar.css')
+  link(rel='stylesheet' href='./static/css/about.css')
+  link(rel='stylesheet' href='./static/css/services.css')
+  link(rel='stylesheet' href='./static/css/contact.css')
+  link(rel='stylesheet' href='./static/css/price.css')
+  link(rel='icon' type='image/png' sizes='32x32' href='./images/favicon-32x32.png')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap' rel='stylesheet')
+
+#navbar.nav
+  ul.nav.navbar-nav.navbar-right
+    li
+      a.menu.active(href='/signup') Signup
+    li
+      a.menu(href='/loginpage') Userlogin
+    li
+      a.menu(href='#about') Meals
+    li
+      a.menu(href='#service') About Us
+    li
+      a.menu(href='/Eloginpage') Employee Login
+    
+section#about.about.text-center
+  .container
+    header
+     h1#ourprice Our Pricing
+     .toggle
+      label Annually 
+      .toggle-btn
+        input#checkbox.checkbox(type='checkbox')
+        label#sub.sub(for='checkbox')
+          .circle
+      label  Monthly
+    .cards
+      .card.shadow
+        ul.ul1
+          li.pack Basic
+          li#basic.price.bottom-bar 2800
+          li.bottom-bar 2 Meals
+          li.bottom-bar No flexibility
+          li.bottom-bar Lunch + Dinner 
+          li
+            a.btn(href='/meal2') Show Menu
+      .card.active
+        ul.ul1
+          li.pack Intermideate
+          li#professional.price.bottom-bar 3500
+          li.bottom-bar 3 Meals
+          li.bottom-bar Flexible
+          li.bottom-bar Breakfast + Lunch + Dinner
+          li
+            a.active-btn(href='/meal3') Show Menu
+      .card.shadow
+        ul.ul1
+          li.pack Special
+          li#master.price.bottom-bar 399.99
+          li.bottom-bar 4 Meals
+          li.bottom-bar Flexible
+          li.bottom-bar Breakfast + Lunch + Snacks + Dinner
+          li
+            a.btn(href='/meal4') Show Menu
+    script(src="/static/css/script.js")
+
+section#service.service
+  h2 AboutUs
+  h4 Best quality food . Great Taste . 
+  .container_service
+    .row_service
+      .col-md-3.col-sm-6
+        .single-service
+          .single-service-img
+            .service-img
+              img.heart.img-responsive(src='./static/img/service1.png' alt='')
+          h3 Support
+      .col-md-3.col-sm-6
+        .single-service
+          .single-service-img
+            .service-img
+              img.brain.img-responsive(src='./static/img/service2.png' alt='')
+          h3 Online Registration
+      .col-md-3.col-sm-6
+        .single-service
+          .single-service-img
+            .service-img
+              img.knee.img-responsive(src='./static/img/service3.png' alt='')
+          h3 Flexible Payments
+      .col-md-3.col-sm-6
+        .single-service
+          .single-service-img
+            .service-img
+              img.bone.img-responsive(src='./static/img/service4.png' alt='')
+          h3 Room Services
+section#contact.contact
+  .container
+    .contact-heading.text-center
+      h2 contact us
+    .contactrow
+      .col-md-5.contact-info.text-left
+        h3 contact information
+        .info-detail
+          ul
+            li
+              i.fa.fa-calendar
+              span Monday - Friday:
+              |  9:30 AM to 6:30 PM
+          ul
+            li
+              i.fa.fa-map-marker
+              span Address:
+              |  Samar Hostel , Block 7a
+          ul
+            li
+              i.fa.fa-phone
+              span Phone:
+              |  (032) 987-1235
+          ul
+            li
+              i.fa.fa-fax
+              span Fax:
+              |  (123) 984-1234
+          ul
+            li
+              i.fa.fa-envelope
+              span Email:
+              |  info@samarhostel.com
+

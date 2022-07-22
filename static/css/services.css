@@ -1,0 +1,157 @@
+.container_service {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    padding-top: 40px;
+}
+
+.row_service {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.service {
+    z-index: 1;
+    background: rgb(223, 22, 79);
+    background-repeat: repeat-y;
+    margin-top: 40px;
+}
+
+.service h2 {
+    font-size: 50px;
+    color: #fff;
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.service h4 {
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 70px;
+    display: block;
+}
+
+.single-service-img {
+    z-index: 1;
+    width: 205px;
+    height: 125px;
+    background: #fff;
+    position: relative;
+    left: 50%;
+    margin-left: -100px;
+}
+
+.single-service-img:before {
+    content: "";
+    position: absolute;
+    top: -42px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 102px solid transparent;
+    border-right: 104px solid transparent;
+    border-bottom: 42px solid #fff;
+}
+
+.single-service-img:after {
+    content: "";
+    position: absolute;
+    bottom: -42px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 102px solid transparent;
+    border-right: 102px solid transparent;
+    border-top: 42px solid #fff;
+    z-index: 10;
+}
+
+.service-img {
+    width: 200px;
+    height: 123px;
+    background: rgb(247, 34, 94);
+    position: relative;
+    top: 1px;
+    left: 2px;
+}
+
+.service-img:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 40px solid rgb(247, 34, 94);
+}
+
+.service-img:after {
+    content: "";
+    position: absolute;
+    bottom: -39px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-top: 40px solid rgb(247, 34, 94);
+    z-index: 999;
+}
+
+.single-service h3 {
+    margin-top: 60px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 90px;
+}
+
+.col-md-3,
+.col-sm-6 {
+    z-index: 1;
+}
+
+.service-img img.heart {
+    align-self: center;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 20%;
+    top: 0%;
+}
+
+.service-img img.brain {
+    align-self: center;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 20%;
+    top: 0%;
+}
+
+.service-img img.knee {
+    align-self: center;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 20%;
+    top: 0%;
+}
+
+.service-img img.bone {
+    align-self: center;
+    position: relative;
+    height: 120px;
+    width: 120px;
+    left: 20%;
+    top: 0%;
+}
+
+.service-img img {
+    position: absolute;
+}
